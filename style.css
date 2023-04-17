@@ -28,8 +28,8 @@ img {
   display: block;
 }
 
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 
 header {
@@ -57,6 +57,11 @@ header {
   color: var(--second--text-light-color);
   font-size: 18px;
   text-decoration: none;
+}
+
+.header__link.active-link {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .header__link:hover,
@@ -95,7 +100,7 @@ header {
 
 .hero__button {
   margin-top: 20px;
-  padding: 10px;
+  padding: 10px 30px;
 
   background-color: var(--accent-color);
   color: var(--first-text-light-color);
@@ -145,7 +150,6 @@ header {
 }
 
 .team__name-text {
-  display: block;
   margin-top: 5px;
   color: var(--accent-color);
   font-weight: 800;
@@ -166,60 +170,60 @@ header {
   text-align: center;
 }
 
-.feedback__text-owner{
-text-align: end;
-margin-top: 10px;
-font-size: 28px;
-font-weight: 800;
-font-style: normal;
+.feedback__text-owner {
+  text-align: end;
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 800;
+  font-style: normal;
 }
 
-.sing-up__container{
-display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 60px auto;
-    padding: 50px 10%;
+.sing-up__container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 60px auto;
+  padding: 50px 10%;
 
-    background-color: var(--accent-color);
-    border-radius: 10px;
+  background-color: var(--accent-color);
+  border-radius: 10px;
 
-    color: var(--second--text-light-color);
-    font-size: 18px;
+  color: var(--second--text-light-color);
+  font-size: 18px;
 }
 
-.sing-up__action-text{
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 10px;
-    color: var(--first-text-light-color);
+.sing-up__action-text {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--first-text-light-color);
 }
 
-.sing-up__button{
-    padding: 10px;
-    white-space:nowrap;
+.sing-up__button {
+  padding: 10px 30px;
+  white-space: nowrap;
 
-    background-color: var(--accent-color);
-    color: var(--first-text-light-color);
-    border: 1px solid var(--first-text-light-color);
-    border-radius: 10px;
+  background-color: var(--accent-color);
+  color: var(--first-text-light-color);
+  border: 1px solid var(--first-text-light-color);
+  border-radius: 10px;
 }
 
 .sing-up__button:hover,
 .sing-up__button:focus {
-    transform: scale(1.2);
-    transition: var(--transition-function);
+  transform: scale(1.2);
+  transition: var(--transition-function);
 }
 
-footer{
-    background-color: var(--dark-bgr-color);
-    text-align: center;
-    color: var(--second--text-light-color);
-    padding: 20px 0;
+footer {
+  background-color: var(--dark-bgr-color);
+  text-align: center;
+  color: var(--second--text-light-color);
+  padding: 20px 0;
 }
 
-.footer__name-dev{
-    color: var(--accent-color);
+.footer__name-dev {
+  color: var(--accent-color);
 }
