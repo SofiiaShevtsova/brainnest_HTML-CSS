@@ -119,7 +119,8 @@ header {
   flex: 1;
 }
 
-.team__title {
+.team__title,
+.projects__title {
   margin: 40px 0;
   text-align: center;
 
@@ -226,4 +227,57 @@ footer {
 
 .footer__name-dev {
   color: var(--accent-color);
+}
+
+.projects__list {
+  width: 90%;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 60px;
+  list-style: none;
+
+  font-size: 18px;
+  text-align: center;
+}
+
+.projects__item {
+  position: relative;
+  width: 25%;
+  border-radius: 20px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  overflow: hidden;
+}
+
+.projects__item:hover {
+  transform: scale(1.1);
+  transition: var(--transition-function);
+}
+
+.projects__image {
+  width: 100%;
+}
+
+.projects__name-text {
+  padding: 20px;
+  font-weight: 800;
+}
+
+.projects__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  opacity: 0;
+  color: var(--first-text-light-color);
+}
+
+.projects__item:hover > .projects__text {
+  opacity: 1;
+  background-color: rgba(66, 68, 90, 0.7);
+  transition: var(--transition-function);
 }
