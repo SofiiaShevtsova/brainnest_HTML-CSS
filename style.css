@@ -300,8 +300,9 @@ footer {
   animation-timing-function: linear;
 }
 
-.achievements__text {
+.achievements__text-box {
   flex: 2;
+  font-size: 24px;
 }
 
 @keyframes animateGlow {
